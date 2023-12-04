@@ -217,11 +217,16 @@ table {
   background-size: contain;
 }
 .advent__number {
-  background-color: white;
+  background-image: url("./images/fond-paquet.jpg");
+  background-size: cover;
   height: 100%;
   aspect-ratio: 1/1;
   border-radius: 50% 50% 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Mountains of Christmas", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #BB2528;
 }
