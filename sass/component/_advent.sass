@@ -11,7 +11,7 @@
         @include mixins.flex-center()
         @for $i from 1 through 24
             &:nth-child(#{$i})
-                background-image: url("../images/image-#{$i}.svg")
+                background-image: url("./images/image-#{$i}.svg")
                 background-repeat: no-repeat
                 background-position: center
                 background-size: contain
@@ -27,3 +27,7 @@
         font-size: 3rem
         font-weight: bold
         color: #BB2528
+        transition: opacity 0.5s ease-in
+
+        &.hide
+            opacity: 0
