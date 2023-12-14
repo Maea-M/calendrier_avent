@@ -1,3 +1,5 @@
+/*import quotes from "./quote.js"*/
+
 const boxes =  document.querySelectorAll(".js-box")
 const today =  new Date (Date.now())
 const dayNumber = today.getDate()
@@ -8,6 +10,7 @@ boxes.forEach(box =>{
         if (boxNumber <= dayNumber){
             playSong()
             showImage(box)
+            openModal(boxNumber)
         }
     })
 })
@@ -22,4 +25,13 @@ const playSong = () => {
 
 const showImage = (boxToHide) =>{
     boxToHide.classList.add('hide')
+}
+
+const modal = document.querySelector('.js-modal')
+const quote = document.querySelector('js-quote')
+const author = document.querySelector('js-author')
+const openModal = (index) =>{
+    quote.textContent = quotes[index].quote
+    author.textContent = quotes[index].author
+    modal.showModal()
 }
