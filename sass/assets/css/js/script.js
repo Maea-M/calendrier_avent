@@ -1,4 +1,4 @@
-/*import quotes from "./quote.js"*/
+import quotes from "./quote.js"
 
 const boxes =  document.querySelectorAll(".js-box")
 const today =  new Date (Date.now())
